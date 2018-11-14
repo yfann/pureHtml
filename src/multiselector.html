@@ -14,7 +14,7 @@
 <body>
     <div class="container-fluid" style="margin-top:150px;margin-left:150px;">
         <div class="row">
-            <div class="col-xs-6 col-md-4">
+            <div>
                 <select id="DDLState" multiple="multiple">
                         <option value="cheese">Cheese</option>
                         <option value="tomatoes">Tomatoes</option>
@@ -23,6 +23,172 @@
                         <option value="pepperoni">Pepperoni</option>
                         <option value="onions">Onions</option>
                 </select>
+            </div>
+            <div>  
+                    <div class="form-group">
+                            <input type="hidden" name="category_id" id="category_id" value="">
+                            <div class="dropdown" id="dropdown">
+                                <button id="dLabel" role="button" data-toggle="dropdown" class="btn btn-white" href="javascript:;"
+                                    aria-expanded="false">
+                                    <span id="select-title">Male Grooming-&gt;剃须刀-&gt;ALL</span>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                    <li class="dropdown-submenu"><a class="dropdown-a" style="padding-top:10px;" href="javascript:;">Home
+                                            Environmental Care</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu"><a class="dropdown-a" style="padding-top:10px;" href="javascript:;">除湿机</a>
+                                                <ul class="dropdown-menu" id="third-menu">
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Home Environmental Care','除湿机','ALL')"
+                                                            href="javascript:;">ALL</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Home Environmental Care','除湿机','DE4201')"
+                                                            href="javascript:;">DE4201</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Home Environmental Care','除湿机','DE4202')"
+                                                            href="javascript:;">DE4202</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Home Environmental Care','除湿机','DE5205')"
+                                                            href="javascript:;">DE5205</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Home Environmental Care','除湿机','DE5206')"
+                                                            href="javascript:;">DE5206</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a class="dropdown-a" style="padding-top:10px;" href="javascript:;">Male
+                                            Grooming</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu"><a class="dropdown-a" style="padding-top:10px;" href="javascript:;">剃须刀</a>
+                                                <ul class="dropdown-menu" id="third-menu">
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','ALL')"
+                                                            href="javascript:;">ALL</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','AT798')"
+                                                            href="javascript:;">AT798</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','FT668')"
+                                                            href="javascript:;">FT668</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','HQ4')"
+                                                            href="javascript:;">HQ4</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','HQ8')"
+                                                            href="javascript:;">HQ8</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','HS199')"
+                                                            href="javascript:;">HS199</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','JC302')"
+                                                            href="javascript:;">JC302</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','PQ182')"
+                                                            href="javascript:;">PQ182</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','PQ190')"
+                                                            href="javascript:;">PQ190</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','PQ203')"
+                                                            href="javascript:;">PQ203</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','PQ206')"
+                                                            href="javascript:;">PQ206</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','PQ216')"
+                                                            href="javascript:;">PQ216</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','PQ226')"
+                                                            href="javascript:;">PQ226</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','RQ1150')"
+                                                            href="javascript:;">RQ1150</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','RQ310')"
+                                                            href="javascript:;">RQ310</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','RQ32')"
+                                                            href="javascript:;">RQ32</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S100')"
+                                                            href="javascript:;">S100</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S1020')"
+                                                            href="javascript:;">S1020</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S106')"
+                                                            href="javascript:;">S106</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S108')"
+                                                            href="javascript:;">S108</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S111')"
+                                                            href="javascript:;">S111</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S118')"
+                                                            href="javascript:;">S118</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S301')"
+                                                            href="javascript:;">S301</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S311')"
+                                                            href="javascript:;">S311</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S330')"
+                                                            href="javascript:;">S330</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S331')"
+                                                            href="javascript:;">S331</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S360')"
+                                                            href="javascript:;">S360</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S5077')"
+                                                            href="javascript:;">S5077</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S5079')"
+                                                            href="javascript:;">S5079</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S5080')"
+                                                            href="javascript:;">S5080</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S5081')"
+                                                            href="javascript:;">S5081</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S5082')"
+                                                            href="javascript:;">S5082</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S5090')"
+                                                            href="javascript:;">S5090</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S5091')"
+                                                            href="javascript:;">S5091</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S510')"
+                                                            href="javascript:;">S510</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S511')"
+                                                            href="javascript:;">S511</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S512')"
+                                                            href="javascript:;">S512</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S526')"
+                                                            href="javascript:;">S526</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S528')"
+                                                            href="javascript:;">S528</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S530')"
+                                                            href="javascript:;">S530</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S5351')"
+                                                            href="javascript:;">S5351</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S5380')"
+                                                            href="javascript:;">S5380</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S566')"
+                                                            href="javascript:;">S566</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S7310')"
+                                                            href="javascript:;">S7310</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S8860')"
+                                                            href="javascript:;">S8860</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S8870')"
+                                                            href="javascript:;">S8870</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S8880')"
+                                                            href="javascript:;">S8880</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S8980')"
+                                                            href="javascript:;">S8980</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S9031')"
+                                                            href="javascript:;">S9031</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','S9781')"
+                                                            href="javascript:;">S9781</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','SH30')"
+                                                            href="javascript:;">SH30</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','SW3700')"
+                                                            href="javascript:;">SW3700</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','SW5700')"
+                                                            href="javascript:;">SW5700</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','SW6700')"
+                                                            href="javascript:;">SW6700</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','SW9700')"
+                                                            href="javascript:;">SW9700</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','XZ580')"
+                                                            href="javascript:;">XZ580</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','XZ5800')"
+                                                            href="javascript:;">XZ5800</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','XZ5810')"
+                                                            href="javascript:;">XZ5810</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','YQ308')"
+                                                            href="javascript:;">YQ308</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','YQ6008')"
+                                                            href="javascript:;">YQ6008</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','YQ6308')"
+                                                            href="javascript:;">YQ6308</a></li>
+                                                    <li><a class="dropdown-a" style="padding-top:10px;" onclick="getProduct('Male Grooming','剃须刀','YS526')"
+                                                            href="javascript:;">YS526</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
             </div>
         </div>
     </div>
